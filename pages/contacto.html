@@ -7,53 +7,65 @@
     <link rel="stylesheet" href="../css/index.css">
     <title>Contacto NEO SECURITY</title>
 </head>
-<body>
+<body class="cursor">
     <header>
-        <nav>
+        <nav class="navbar">
             <ul>
-                <li> <a href="../index.html"> Inicio</a></li>
-                <li><a href="../pages/donde estamos.html"> Donde estamos </a></li>
-                <li><a href="../pages/quienes somos.html"> Quienes somos </a></li>
+                <li><h2><a href="../index.html"> Inicio</a></li></h2>
+                <li><h2><a href="../pages/donde estamos.html"> Donde estamos </a></h2></li>
+                <li><h2><a href="../pages/quienes somos.html"> Quienes somos </a></h2></li>
             </ul>
         </nav>
     </header>
 
     <h1 class="titulo"> 
         Contactanos!
-    </h1>
-   
-    <ul>
-        <li> Telefono: 1140307700 <br> 
-            <img src="../images/pngwing.com.png" style="width: 20px" alt="Whatsapp"> <a href="http://wa.me/5491140307700" target="_blank"> Whatsapp </a> </li>
-        <li> Email: neosecurity@gmail.com</li>
-    </ul>
-
-    <h4> Formulario de contacto</h4>
-    <form action="" method="post"> 
-        <label for="Nombre"> Nombre: </label>
-        <input type="text" name="nombre" id="nombre">
-        <br>
-
-        <label for="telefono"> Teléfono: </label>
-        <input type="number" name="telefono" id="telefono">
-        <br>
-
-        <label for="email"> Email: </label>
-        <input type="email" name="email" id="email">
-        <br>
-
-        <label for="password"> Contraseña: </label>
-        <input type="password" name="password" id="password">
-        <br>
-
-        <input type="reset" value="Borrar campos">
-        <input type="submit" value="Enviar Datos">
+    </h1><br>
     
-        <div>
-        <figure>
-            <img class="imagen1" style="width: 400px" src="../images/camaras.png" alt="Camaras de seguridad"> 
-        </figure>
-    </div>
+    <div class="formulario">
+        <ul>
+            <li> Teléfono: 1140307700 <br> 
+                <img src="../images/pngwing.com.png" style="width: 20px" alt="Whatsapp"> <a href="http://wa.me/5491140307700" target="_blank"> Whatsapp </a> </li>
+            <li> Email: neosecurity@gmail.com</li>
+        </ul><br><br>
+        
+        <form action="" method="post"> 
+            <!-- <fieldset> -->
+                <legend>Formulario de contacto</legend>
+                   <label for="name">
+                        Ingrese su nombre *
+                        <input type="text" name="nombre" required placeholder="Por ej: John Smith" />
+                        <br>
+                    </label>
+                    <label for="telefono">
+                        Ingrese su Teléfono *
+                        <input type="number" name="telefono" required placeholder="Celular sin el 15">
+                     </label>
+                    <br>
+
+                    <label for="email">
+                        Ingrese su email *
+                        <!-- <input type="email" name="email" id="email" required placeholder="ejemplo@email.com"> -->
+                    </label>
+                    <br>
+                    <label for="text">
+                        Ingrese su mensaje *<br>
+                        <textarea placeholder="Dejanos tu consulta" rows="4" cols="50" id="message" name="message" required></textarea>
+                     </label>
+                    <br>
+                    <h6>Todos los ítems marcados con * son obligatorios</h6><br>
+
+                    <input type="reset" value="Borrar campos">
+                    <input type="submit" value="Enviar Datos">  
+                    <br>
+        
+                    
+                <!-- </fieldset> -->
+                
+                <img class="video" style="width: 400px" src="../images/camaras.png" alt="Camaras de seguridad"> 
+        </div>
+        
+    
 
 </body>
 </html>
